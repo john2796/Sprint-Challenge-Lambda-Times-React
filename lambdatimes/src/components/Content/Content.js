@@ -6,8 +6,10 @@ import Carousel from "../Carousel/Carousel";
 
 // Importing our tab and card data. No need to change anything here.
 import { tabData, cardData } from "../../data";
+import Auth from "../../HOC/auth";
+import Login from "../Login";
 
-export default class Content extends Component {
+class Content extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -42,11 +44,6 @@ export default class Content extends Component {
   render() {
     return (
       <div className="content-container">
-        {/* 
-          Add 2 props to the Tabs component, 
-          `selectedTab` that includes the currently selected tab
-          and `selectTabHandler` that includes the function to change the selected tab
-        */}
         <Tabs
           tabs={this.state.tabs}
           changeSelected={this.changeSelected}
@@ -58,3 +55,4 @@ export default class Content extends Component {
     );
   }
 }
+export default Auth(Content)(Login);

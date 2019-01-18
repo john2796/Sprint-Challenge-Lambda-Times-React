@@ -72,8 +72,8 @@ export default class Carousel extends Component {
         <div className="left-button" onClick={this.leftClick}>
           {"<"}
         </div>
-        <div>{slides}</div>
-
+        {/* <div>{slides}</div> */}
+        {slides}
         <div className="right-button" onClick={this.rightClick}>
           {">"}
         </div>
