@@ -1,14 +1,14 @@
-[ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+[ x] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
 A useful accessory often used with React is PropTypes which is a way of making runtime assertions about what type of data a React component requires in order to render properl
 without PropTypes or some form of type checking, we run into the risk of passing in a wrong data type to a component, which could cause a crash or some unexpected behavior in your application.
 
-- [ ] Describe a life-cycle event in React?
-      Mounting methods
-      A component mounts when it is created and first inserted into the DOM i.e when it is rendered for the first time. The methods that are available during this period are:
-      constructor()
-      componentWillMount()
-      render()
-      componentDidMount()
+- [x ] Describe a life-cycle event in React?
+  Mounting methods
+  A component mounts when it is created and first inserted into the DOM i.e when it is rendered for the first time. The methods that are available during this period are:
+  constructor()
+  componentWillMount()
+  render()
+  componentDidMount()
 
 Updating methods
 Components do not always remain in the same state after mounting. Sometimes the underlying props could change and the component has to be re-rendered. The updating lifecycle methods give you control over when and how this updating should take place.
@@ -27,11 +27,11 @@ Components do not always stay in the DOM. Sometimes they have to be removed due 
 The componentWillUnmount() method
 This is the only unmounting method. componentWillUnmount is called right before a component is removed from the DOM. This is where you can perform any cleanups that should be done such as invalidating timers, canceling network requests, removing event listeners or canceling any subscriptions made in componentDidMount.
 
-- [ ] Explain the details of a Higher Order Component?
-      A Higher order component is a function that takes a component as an argument and returns a new component.
+- [ x] Explain the details of a Higher Order Component?
+  A Higher order component is a function that takes a component as an argument and returns a new component.
 
-- [ ] What are three different ways to style components in React? Explain some of the benefits of each.
-      styled-components
+- [x ] What are three different ways to style components in React? Explain some of the benefits of each.
+  styled-components
 
 Inline CSS This approach makes it easier to colocate styles in components and understanding what styles each component has. Leveraging the abilities of JS also makes it easier to work with more complex styling when needed
 
